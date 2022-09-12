@@ -1,0 +1,17 @@
+<div class="user-information-style">
+  <div class="info">
+    total task<span id="total" *ngIf="hasValue"
+      >{{ calculateTotal() }}{{ total }}
+    </span>
+  </div>
+  <div class="info">
+    completed task<span id="completed" *ngIf="hasValue"
+      >{{ calculateCompleted() }}{{ completed }}</span
+    >
+  </div>
+  <div class="info">
+    remaining task<span id="remaining" *ngIf="hasValue"
+      >{{ calculateRemaining() }}{{ remain }}</span
+    >
+  </div>
+</div>

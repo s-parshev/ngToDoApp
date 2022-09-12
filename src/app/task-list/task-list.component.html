@@ -1,0 +1,6 @@
+<app-task 
+  class="task-list-style" 
+  *ngFor="let task of tasksFromAppComponent" 
+  [singleTask]="task" 
+  (taskIdToDelete)="handleDeleting(task)">
+</app-task>

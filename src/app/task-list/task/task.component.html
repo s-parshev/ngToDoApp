@@ -1,0 +1,8 @@
+
+<div class="task-style shadow">
+  <p [class]="{'completed':dataTaskStatus}">{{singleTask.taskValue}}</p>
+  <div>
+    <button [disabled]="dataTaskStatus" (click)="completeTask(singleTask)">complete</button>
+    <button (click)="deleteTask(singleTask)">delete</button>
+  </div>
+</div>
